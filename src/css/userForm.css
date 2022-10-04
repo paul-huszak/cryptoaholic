@@ -1,0 +1,160 @@
+.userform-container {
+  user-select: none;
+  background-image: url("../images/bg2.png");
+  background-color: #cccccc;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.log-wrapper {
+  max-height: 70vh;
+  width: 80vh;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: left;
+  color: #000000;
+}
+
+.log-wrapper .form-control:focus {
+  border-color: #167bff;
+  box-shadow: none;
+}
+
+.log-wrapper h3 {
+  user-select: none;
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.log-inner {
+  user-select: none;
+  font-size: 1rem;
+  width: 80vh;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 40px 55px 45px 55px;
+  border-radius: 7px;
+  transition: all 0.3s;
+}
+
+.reg-wrapper {
+  width: 120vh;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: left;
+  color: #000000;
+}
+
+.reg-wrapper .form-control:focus {
+  border-color: #167bff;
+  box-shadow: none;
+}
+
+.reg-wrapper h3 {
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.reg-inner {
+  user-select: none;
+  font-size: 1rem;
+  width: 120vh;
+  margin: auto;
+  margin-top: 3rem;
+  background: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 40px 55px 45px 55px;
+  border-radius: 7px;
+  transition: all 0.3s;
+}
+
+.btn-light {
+  border-radius: 25%;
+}
+
+.btn-light:hover {
+  background-color: rgb(160, 160, 160);
+  border-color: rgb(160, 160, 160);
+}
+
+.bi-plus-lg {
+  color: black;
+  font-size: large;
+}
+
+.generic-text {
+  text-decoration: none;
+  text-align: left;
+  font-size: 13px;
+  padding-top: 10px;
+  color: #585858;
+  margin: 0;
+}
+
+.reset-link {
+  text-decoration: none;
+  text-align: left;
+  font-size: 13px;
+  padding-top: 10px;
+  color: #167bff;
+  margin: 0;
+}
+
+.reset-link a {
+  text-decoration: none;
+}
+
+.show-btn {
+  width: 45px;
+  margin: auto;
+  background: #ffffff;
+  padding: 10px 15px 10px 15px;
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: right;
+}
+
+.reg-warning {
+  font-size: 0.8rem;
+  margin-top: 0px;
+  color: rgb(172, 37, 37);
+  text-align: left;
+  justify-content: left;
+}
+
+.reg-warning-pass {
+  font-size: 0.8rem;
+  margin-top: -15px;
+  color: rgb(172, 37, 37);
+  text-align: left;
+  justify-content: left;
+}
+
+.form-control {
+  display: flex;
+  font-size: 0.8rem;
+}
+
+.form-control-mail {
+  display: flex;
+  font-size: 0.8rem;
+  height: 36px;
+}

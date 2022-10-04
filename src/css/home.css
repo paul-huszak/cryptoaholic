@@ -1,0 +1,94 @@
+.home-container {
+  user-select: none;
+  background-image: url("../images/bg2.png");
+  background-color: #cccccc;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  align-items: left;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  overflow-x: hidden;
+}
+
+.home-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+.header {
+  font-size: 90%;
+  font-weight: 400;
+}
+
+.mid-line {
+  width: 500px;
+  border-bottom: 1px solid grey;
+}
+
+.header-two {
+  font-size: 60%;
+  font-weight: 300;
+}
+
+.strong-text {
+  color: gold;
+}
+
+.word-clara {
+  color: rgb(0, 234, 255);
+}
+
+.word-concisa {
+  color: rgb(0, 215, 79);
+}
+
+.word-bonita {
+  color: rgb(230, 61, 168);
+}
+
+.btn-explore {
+  color: rgb(35, 35, 35);
+  border-color: rgb(227, 152, 82);
+  background-color: rgb(227, 152, 82);
+  border-radius: 7px;
+  padding-bottom: 9px;
+  padding-top: 7px;
+  margin-top: 7px;
+  width: 220px;
+  color: white;
+}
+
+.btn-explore:hover {
+  color: white;
+  border-color: rgb(182, 95, 13);
+  background-color: rgb(182, 95, 13);
+}
+
+.ReturnButton {
+  font-size: 75%;
+}
+
+.col-homeText {
+  position: relative;
+  text-align: start;
+  transform: scale(1.12);
+}
+
+.col-homeImg {
+  position: relative;
+  transform: scale(0.8);
+}
+
+.text-home {
+  font-size: 90%;
+  font-weight: 300;
+}

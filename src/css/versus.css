@@ -1,0 +1,178 @@
+:root {
+  --green: #008000;
+  --dark-green: #034b00;
+  --yellow: #fff700;
+  --dark-yellow: #9d8300;
+  --red: #ff0000;
+  --dark-red: #990000;
+  --blue: #00bdd6;
+  --dark-blue: #186487;
+  --black: #444;
+  --light-color: #666;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --border-hover: 0.1rem solid var(--black);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.div-versus-container {
+  background: linear-gradient(220.55deg, #c73068 0%, #03132e 100%);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+.left-coin-container {
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  min-height: 85vh;
+}
+
+.right-coin-container {
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: right;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  padding-left: 20px;
+  border-left: 3px solid whitesmoke;
+  color: white;
+  min-height: 85vh;
+}
+
+.sidebar_left {
+  margin-top: 65px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar_right {
+  margin-top: 65px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mktdata-container-versus {
+  user-select: none;
+  margin-right: 7px;
+  margin-left: 7px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border: 1px solid grey;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+  color: var(white);
+  border-radius: 15px;
+  padding-bottom: 9px;
+  padding-top: 7px;
+  font-size: 60%;
+  transition: transform 0.2s;
+}
+
+.mktdata-container-versus:hover {
+  transform: scale(1.07);
+}
+
+.mktdata-container-pte-versus {
+  user-select: none;
+  margin-right: 7px;
+  margin-left: 7px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border: 1px solid grey;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+  color: var(white);
+  border-radius: 15px;
+  padding-bottom: 9px;
+  padding-top: 7px;
+  font-size: 60%;
+  transition: transform 0.2s;
+}
+
+.mktdata-container-pte-versus:hover {
+  transform: scale(1.07);
+}
+
+.crypto-title-versus {
+  clear: both;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.crypto-image-versus {
+  padding-right: 7px;
+}
+
+.crypto-symbol-versus {
+  padding-left: 7px;
+  color: #00bfff;
+}
+
+.label-versus {
+  color: white;
+  font-size: 70%;
+}
+
+.pte-danger-versus {
+  color: red;
+}
+
+.pte-success-versus {
+  color: rgb(0, 202, 0);
+}
+
+.row {
+  user-select: none;
+  padding-top: 0.6rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.mktdata-prop-versus {
+  color: var(--blue);
+}
+
+.title-container {
+  font-size: 120%;
+  align-content: left;
+}
+
+.title-versus {
+  padding-top: 10px;
+  user-select: none;
+  text-align: left;
+}
+
+.graph_container {
+  margin-top: -40px;
+}
+
+.title-mktdata {
+  user-select: none;
+  text-align: center;
+  font-size: 90%;
+  padding-bottom: 10px;
+}
+
+.mktData_cont {
+  border-top: 1px dashed yellow;
+  width: 700px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}

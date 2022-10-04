@@ -1,0 +1,190 @@
+.admin-container {
+  user-select: none;
+  background: linear-gradient(220.55deg, #c73068 0%, #03132e 100%);
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.ui.grid.container.admin {
+  width: 1200px;
+  margin-top: 44px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.top-index-users {
+  user-select: none;
+  margin-top: 20px;
+  padding-top: 50px;
+}
+
+.body-text {
+  font-size: 65%;
+  text-align: center;
+}
+
+.btn-compare-go {
+  color: white;
+  border-color: rgb(76, 127, 111);
+  background-color: rgb(76, 127, 111);
+  border-radius: 7px;
+  padding-bottom: 9px;
+  padding-top: 7px;
+  margin-top: 7px;
+}
+
+.btn-compare-go:hover {
+  color: white;
+  border-color: rgb(16, 81, 60);
+  background-color: rgb(16, 81, 60);
+}
+
+.close-btn-visible {
+  position: relative;
+}
+
+.close-btn-hidden {
+  visibility: hidden;
+  position: relative;
+}
+
+.inline {
+  user-select: none;
+  width: 530px;
+}
+
+.textVs {
+  text-align: center;
+}
+
+.table {
+  font-size: 70%;
+  width: 105;
+  cursor: pointer;
+  user-select: none;
+}
+
+.table-alignment {
+  text-align: left;
+}
+
+.grid-box {
+  background: linear-gradient(220.55deg, #fff6eb 0%, #dfd1c5 100%);
+  color: rgb(0, 0, 0);
+  border: 5px solid grey;
+  background-color: whitesmoke;
+  border-radius: 37px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 70%;
+  font-weight: 600;
+  text-align: center;
+  justify-content: center;
+  min-width: 50vh;
+  min-height: 40vh;
+  transition: transform 0.2s;
+}
+
+.grid-box:hover {
+  background: linear-gradient(220.55deg, #ffbb89 0%, #7b6ae0 100%);
+  border: 7px solid rgb(55, 55, 55);
+  transform: scale(1.03);
+}
+
+.numberCircle {
+  color: rgb(149, 14, 14);
+  font-size: 10vw;
+  text-align: center;
+}
+
+.numberCircleAvg {
+  margin-top: 2.5vw;
+  color: rgb(17, 143, 128);
+  font-size: 10vw;
+  text-align: center;
+}
+
+.numberCircleTOP3 {
+  padding-top: 1vw;
+  padding-left: 1vw;
+  text-align: start;
+  color: rgb(79, 79, 76);
+  font-size: 2.5vw;
+}
+
+.btn-top-admin {
+  color: var(--yellow);
+  border-radius: 15px;
+  padding-bottom: 9px;
+  padding-top: 7px;
+  position: fixed;
+  right: 10px;
+  bottom: 55px;
+}
+
+.btn-back-admin {
+  color: var(--yellow);
+  border-radius: 15px;
+  padding-bottom: 9px;
+  padding-top: 7px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+.btn-del-usr {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.btn-del-usr:hover {
+  color: rgb(194, 31, 31);
+}
+
+.btn-primary-admin {
+  background: linear-gradient(220.55deg, #fff6eb 0%, #dfd1c5 100%);
+  border: 5px solid rgb(26, 26, 26);
+  border-radius: 15px;
+  color: black;
+  font-size: 120%;
+  font-weight: 900;
+  width: 70vh;
+  transition: transform 0.2s;
+}
+
+.btn-primary-admin:hover {
+  background: linear-gradient(220.55deg, #c5edf5 0%, #4a879a 100%);
+  color: white;
+  border: 5px solid white;
+  transform: scale(1.02);
+  font-weight: 900;
+}
+
+.title-dashboard {
+  margin-top: 10vh;
+}
+
+.label-dashboard {
+  font-size: 90%;
+}
+
+.stat-grid-container {
+  min-width: 35vh;
+  min-height: 35vh;
+  font-size: 80%;
+}
