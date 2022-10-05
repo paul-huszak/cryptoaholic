@@ -24,7 +24,6 @@ function Asset() {
   const loadFav = localStorage.getItem("favedCoin");
   const loadFavCN = localStorage.getItem("favedCoinCN");
   const loadUserName = sessionStorage.getItem("nickName");
-  const loadLogIn = sessionStorage.getItem("loggedIn");
 
   // Constantes de manejo de datos
   const { id } = useParams();
@@ -97,9 +96,7 @@ function Asset() {
       setDescription(data.description.en);
     };
     fetchSingleCoin();
-    if (loadLogIn) {
-      fetchFavCoins();
-    }
+    fetchFavCoins();
     localStorage.setItem("favedCoin", fav);
     localStorage.setItem("favedCoinCN", favCN);
     localStorage.setItem("currencyNew", currency);
