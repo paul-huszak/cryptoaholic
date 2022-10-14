@@ -80,3 +80,9 @@
   visibility: hidden;
   transform: translateX(15px);
 }
+
+@media screen and (max-width: 1368px) {
+  .nav {
+    display: none;
+  }
+}

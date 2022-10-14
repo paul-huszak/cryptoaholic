@@ -10,6 +10,7 @@ import FavCoinList from "./pages/FavCoinList";
 import Asset from "./pages/Asset";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
+import NotSupported from "./pages/NotSupported";
 import Loading from "./components/Loader";
 import Compare from "./pages/CompareCoins";
 import Versus from "./pages/Versus";
@@ -17,6 +18,7 @@ import Management from "./pages/Management";
 import Dashboard from "./pages/Dashboard";
 import UserManagement from "./pages/UserManagement";
 import Protected from "./components/ProtectedRoute";
+import MobileDevice from "./components/MobileDevice";
 import "./css/App.css";
 
 function App() {
@@ -24,6 +26,7 @@ function App() {
   const loadIsUser = sessionStorage.getItem("loggedIn");
   const [admin, setAdmin] = useState(loadIsAdmin);
   const [user, setUser] = useState(loadIsUser);
+  const windowSize = window.innerWidth;
 
   useEffect(() => {
     setAdmin(loadIsAdmin);
@@ -39,10 +42,31 @@ function App() {
       </Helmet>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
+        <Route
+          path="/"
+          element={
+            <MobileDevice windowSize={windowSize}>
+              <Home />
+            </MobileDevice>
+          }
+        />
+        <Route
+          path="/login"
+          element={
+            <MobileDevice windowSize={windowSize}>
+              <Login />
+            </MobileDevice>
+          }
+        />
         <Route path="/register" element={<Register />} />
-        <Route path="/coins" element={<CoinList />} />
+        <Route
+          path="/coins"
+          element={
+            <MobileDevice windowSize={windowSize}>
+              <CoinList />
+            </MobileDevice>
+          }
+        />
         <Route path="/coins/:id" element={<Asset />} />
         <Route
           path="/my-coins"
@@ -96,8 +120,10 @@ function App() {
           }
         />
         <Route path="/not-found" element={<NotFound />} />
+        <Route path="/not-supported" element={<NotSupported />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      {/* </MobileDevice> */}
     </>
   );
 }
